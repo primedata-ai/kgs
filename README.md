@@ -13,6 +13,11 @@ Offline Key generation service written in Go
 ./scripts/dev
 ```
 
+## Build docker
+```bash
+docker build -t kgs:latest .
+```
+
 ## Contributing
 When contributing to this repository, please first discuss the change you wish to make via 
 [issues](https://github.com/byliuyang/kgs/issues) with the owner of this repository before making a change.

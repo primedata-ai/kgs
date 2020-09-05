@@ -115,7 +115,7 @@ func InitGRpcService(
 		db.NewAvailableKeySQL,
 		db.NewAllocatedKeySQL,
 		gen.NewAlphabet,
-		gen.NewBase62,
+		gen.NewPrimeBase62,
 	)
 	return mdservice.Service{}, nil
 }

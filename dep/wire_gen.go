@@ -57,7 +57,7 @@ func InitGRpcService(name string, logLevel fw.LogLevel, serviceEmailAddress prov
 	buildIn := mdruntime.NewBuildIn()
 	local := mdlogger.NewLocal(name, logLevel, stdOut, timer, buildIn)
 	availableKeySQL := db.NewAvailableKeySQL(sqlDB)
-	v := gen.NewBase62()
+	v := gen.NewPrimeBase62()
 	alphabet, err := gen.NewAlphabet(v)
 	if err != nil {
 		return mdservice.Service{}, err

@@ -38,6 +38,7 @@ func (a AvailableKeySQL) RetrieveInBatch(maxCount uint) ([]entity.Key, error) {
 	query := fmt.Sprintf(`
 SELECT "%s"
 FROM "%s"
+ORDER BY RANDOM()
 LIMIT $1
 `,
 		table.AvailableKey.ColumnKey,

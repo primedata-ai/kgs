@@ -1,4 +1,4 @@
-module github.com/short-d/kgs
+module github.com/primedata-ai/kgs
 
 go 1.13
 
@@ -12,3 +12,5 @@ require (
 
 // Please uncomment the following line for local debugging purpose
 // replace github.com/short-d/app => ../app
+
+replace github.com/short-d/kgs => ./
